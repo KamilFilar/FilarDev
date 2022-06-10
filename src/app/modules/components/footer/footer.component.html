@@ -1,0 +1,29 @@
+<footer class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-xxl-7 col-xl-8 col-lg-9 col-md-10 col-sm-11 col-12 socialMediaBox">
+      <app-footer-social-media
+        [socialIcon]="faGithub"
+        [socialHref]="socialMedia.git.href"
+        [socialText]="socialMedia.git.name"
+      >
+      </app-footer-social-media>
+      <app-footer-social-media
+        [socialIcon]="faLinkedinIn"
+        [socialHref]="socialMedia.fb.href"
+        [socialText]="socialMedia.fb.name"
+      >
+      </app-footer-social-media>
+      <app-footer-social-media
+        [socialIcon]="faFacebook"
+        [socialHref]="socialMedia.linked.href"
+        [socialText]="socialMedia.linked.name"
+      >
+      </app-footer-social-media>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-xxl-3 col-xl-4 col-lg-5 col-md-7 col-sm-9 col-11">
+        <app-footer-copyright></app-footer-copyright>
+      </div>
+    </div>
+  </div>
+</footer>

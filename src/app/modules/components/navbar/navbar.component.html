@@ -1,0 +1,71 @@
+<nav class="navbar navbar-expand-md">
+  <div class="container-fluid">
+    <button class="navbar-brand" (click)="setLogoBehaviour()">
+      <span class="navbar-brand--partOne">Filar</span>
+      <span class="navbar-brand--partTwo">Dev</span>
+    </button>
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <fa-icon [icon]="faBarsStaggered" class="fa-2x navbar-toggler-icon">
+      </fa-icon>
+    </button>
+    <!-- Navbar items -->
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <!-- Left side -->
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <app-navbar-item
+          [text]="'navbar.portfolio' | translate"
+          [href]="hrefToSections.portfolio"
+        >
+        </app-navbar-item>
+        <app-navbar-item
+          [text]="'navbar.aboutMe' | translate"
+          [href]="hrefToSections.aboutMe"
+        >
+        </app-navbar-item>
+        <app-navbar-item
+          [text]="'navbar.contact' | translate"
+          [href]="hrefToSections.contact"
+        >
+        </app-navbar-item>
+      </ul>
+      <!-- Right side -->
+      <ul class="navbar-nav">
+        <li class="navbar-nav__item">
+          <mat-slide-toggle
+            (change)="toggleTheme()"
+            [checked]="toggleBtnSelected"
+            matTooltip="{{ 'navbar.theme.dark' | translate }}"
+          >
+          </mat-slide-toggle>
+        </li>
+        <li class="navbar-nav__item">
+          <button
+            class="navbar-nav__item--link"
+            (click)="setLangEN()"
+            matTooltip="{{ 'navbar.lang.en' | translate }}"
+          >
+            <img [src]="enFlagPath" alt="UK flag" />
+          </button>
+        </li>
+        <li class="navbar-nav__item">
+          <button
+            class="navbar-nav__item--link"
+            (click)="setLangPL()"
+            matTooltip="{{ 'navbar.lang.pl' | translate }}"
+          >
+            <img [src]="plFlagPath" alt="Poland flag" />
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

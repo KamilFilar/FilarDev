@@ -1,0 +1,32 @@
+<div
+  class="container-fluid"
+  id="Contact"
+  [ngClass]="{ 'slideIn--bottom': slideOff == true }"
+>
+  <div
+    class="row justify-content-center"
+    [ngClass]="{ displayWrapper: slideOff == false }"
+  >
+    <div class="col-xxl-4 col-xl-5 col-lg-6 col-md-10 col-sm-11 col-12 contactText">
+      <p class="contactText__title">
+        {{ "home.contact.tittle" | translate }}
+      </p>
+      <p class="contactText__email">
+        <fa-icon [icon]="faMailBulk" class="fa-2x"></fa-icon>
+        <a href="mailto:FilarKamil04@gmail.com">FilarKamil04@gmail.com </a>
+      </p>
+      <p class="contactText__phone">
+        <fa-icon [icon]="faPhone" class="fa-2x"></fa-icon>
+        <span>(+48) 518 612 126</span>
+      </p>
+      <p class="contactText__address">
+        <fa-icon [icon]="faMapLocationDot" class="fa-2x"></fa-icon>
+        <span>{{ "home.contact.location" | translate }}</span>
+      </p>
+      <img [src]="imgPath" class="contactText__photo" alt="Two red diece"/>
+    </div>
+    <div class="col-xxl-5 col-xl-6 col-lg-6 col-md-10 col-sm-11 col-12 contactForm">
+      <app-home-contact-form></app-home-contact-form>
+    </div>
+  </div>
+</div>

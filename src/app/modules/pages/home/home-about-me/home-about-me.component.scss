@@ -1,0 +1,93 @@
+.container-fluid {
+  margin: 50px 0 150px;
+}
+
+.content {
+  margin-top: 25px;
+}
+
+.aboutMe {
+  padding: 10px 0;
+
+  &__title {
+    margin: 20px 0 30px;
+    padding: 0;
+    font-size: 30px;
+    font-weight: 550;
+    cursor: default;
+    transition: 0.3s;
+  }
+
+  &__short,
+  &__long {
+    color: var(--default-color-dark);
+    cursor: default;
+    animation: fadeinIcon 1s;
+  }
+
+  &__short {
+    padding: 5px;
+    font-family: "Roboto", serif;
+    font-size: 24px;
+    line-height: 32px;
+    text-indent: 1rem;
+    letter-spacing: 1px;
+    transition: 0.2s;
+  }
+
+  &__long {
+    font-size: 32px;
+    font-weight: 550;
+    line-height: 42px;
+  }
+}
+
+// Center content vertically
+.vertically-center {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+// Components
+app-about-me-skills {
+  animation: fadeinIcon 1s;
+}
+
+app-button-without-href {
+  display: block;
+  margin: 15px 25px;
+}
+
+fa-icon {
+  color: var(--green-light);
+  margin-left: -2px;
+  animation: fadeinIcon 1s linear;
+}
+
+@media only screen and (max-width: 768px) {
+  .aboutMe__short {
+    padding-top: 0;
+  }
+
+  .aboutMe__title {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .aboutMe__short {
+    padding: 0;
+  }
+}
+
+@keyframes fadeinIcon {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

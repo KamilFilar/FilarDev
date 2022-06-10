@@ -1,0 +1,102 @@
+.row {
+  height: 55vh;
+  padding: 10px;
+  text-align: center;
+}
+
+.imagesBox {
+  &--left,
+  &--right {
+    padding: 5px;
+    max-width: 300px;
+    max-height: 355px;
+    background-color: var(--bg-image-color);
+    box-shadow: 0 0 15px var(--box-shadow-img-color);
+  }
+
+  &--left {
+    z-index: 1;
+    position: relative;
+    transform: rotate(5deg);
+
+    img {
+      position: absolute;
+      top: -70px;
+      bottom: 40px;
+      left: 0;
+      padding: 5px;
+      object-fit: cover;
+      object-position: 0 70px;
+      -webkit-filter: grayscale(25%);
+      filter: grayscale(25%);
+      transition: 0.3s;
+
+      &:hover {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+      }
+    }
+  }
+
+  &--right {
+    z-index: 0;
+    margin-top: 70px;
+    margin-left: -40px;
+    transform: rotate(18deg);
+    
+    img {
+      position: absolute;
+      top: -70px;
+      bottom: 40px;
+      left: 0;
+      padding: 5px;
+      object-fit: cover;
+      object-position: 0 70px;
+      -webkit-filter: grayscale(25%);
+      filter: grayscale(25%);
+      transition: 0.3s;
+
+      &:hover {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+      }
+    }
+  }
+}
+
+// 1209 px is OK
+// 1182 second is down
+// 992 is last px on down
+@media only screen and (max-width: 1208px) {
+  .imagesBox {
+    &--first {
+      transform: rotate(3deg);
+      transition: 0.5s;
+    }
+
+    &--second {
+      display: none;
+      transition: 0.5s;
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .imagesBox {
+    &--second {
+      display: inline-block;
+      margin-top: 20px;
+      margin-left: -20px;
+      transform: rotate(-5deg);
+      transition: 0.5s;
+    }
+  }
+}
+
+@media only screen and (max-width: 677px) {
+  .imagesBox {
+    &--second {
+      display: none;
+    }
+  }
+}

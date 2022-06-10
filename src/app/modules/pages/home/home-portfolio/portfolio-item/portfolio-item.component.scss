@@ -1,0 +1,136 @@
+.row {
+  margin: 80px 0;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+}
+
+.textWrapper {
+  position: relative;
+  z-index: 2;
+  font-family: "Roboto", serif;
+  font-display: swap;
+  box-shadow: -3px 0 0.7rem var(--box-shadow-portfolio);
+  background-color: var(--bg-color-portfolio);
+  height: 100%;
+  min-height: 300px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  cursor: context-menu;
+
+  &__title {
+    margin: 0;
+    font-size: 1.7rem;
+    line-height: 1.9rem;
+    padding: 15px 0 20px;
+    background: -webkit-linear-gradient(
+      right,
+      var(--green-light),
+      var(--green-dark) 60%,
+      var(--green-light)
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__description {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    text-indent: 10px;
+    padding-left: 5px;
+  }
+
+  &__stack {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    padding-left: 5px;
+
+    span {
+      font-size: 1.3rem;
+      background: -webkit-linear-gradient(
+        left,
+        var(--green-light) 75%,
+        var(--green-dark)
+      );
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
+
+.imgWrapper {
+  position: relative;
+  margin-left: -30px;
+  z-index: 1;
+  padding: 0;
+  box-shadow: 0 0 0.7rem var(--box-shadow-portfolio);
+  transition: 1.5s;
+  
+  img {
+    border-radius: 5px;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+    transition: 0.25s;
+  }
+}
+
+fa-icon {
+  color: var(--green-light);
+  margin-left: -2px;
+}
+
+app-button {
+  margin: 0 15px 0 5px;
+}
+
+@media only screen and (min-width: 992px) {
+  .imgWrapper {
+    img {
+      min-height: 450px;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .imgWrapper {
+    img {
+      min-height: 350px;
+      object-fit: cover;
+      object-position: 0% 50%
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .imgWrapper {
+    box-shadow: 0 0 0.7rem var(---box-shadow-portfolio);
+    margin-left: 0;
+
+    img {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    &:hover {
+      transform: scale(1.01);
+      z-index: 3 !important;
+    }
+  }
+
+  .textWrapper {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .textWrapper {
+    min-height: 370px;
+
+    &__btns {
+      margin: auto 0;
+    }
+  }
+}

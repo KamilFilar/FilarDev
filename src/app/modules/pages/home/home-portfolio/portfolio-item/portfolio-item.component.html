@@ -1,0 +1,50 @@
+<div class="row justify-content-center">
+  <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12 col-12 textWrapper">
+    <p class="textWrapper__title">
+      {{ projectTitle }}
+    </p>
+    <p class="textWrapper__description">
+      {{ projectDescription }}
+    </p>
+    <p class="textWrapper__stack">
+        <span class="textWrapper__stack--color">Stack</span>: 
+        {{ projectStack }}
+    </p>
+    <div class="textWrapper__btns">
+      <app-button
+        *ngIf="isEngineerThesisProject() == false && isSilverGlobProject() == false && projectLink != ''"
+        [btnName]="btn.nameSite"
+        [btnHref]="projectLink"
+        [btnTarget]="btn.target"
+      >
+        <fa-icon [icon]="faEarthEurope" class="fa-lg"></fa-icon>
+      </app-button>
+      <app-button
+        *ngIf="isEngineerThesisProject()"
+        [btnName]="btn.nameGitAPI"
+        [btnHref]="btn.engineerAPIGit"
+        [btnTarget]="btn.target"
+      >
+        <fa-icon [icon]="faGithub" class="fa-lg"></fa-icon>
+      </app-button>
+      <app-button
+        *ngIf="isSilverGlobProject()"
+        [btnName]="btn.nameGitAPI"
+        [btnHref]="btn.silverGlobeAPIGit"
+        [btnTarget]="btn.target"
+      >
+        <fa-icon [icon]="faGithub" class="fa-lg"></fa-icon>
+      </app-button>
+      <app-button
+        [btnName]="btn.nameGit"
+        [btnHref]="projectRepository"
+        [btnTarget]="btn.target"
+      >
+        <fa-icon [icon]="faGithub" class="fa-lg"></fa-icon>
+      </app-button>
+    </div>
+  </div>
+  <div class="col-xl-6 col-lg-7 col-md-6 col-sm-12 col-12 order-first order-md-last imgWrapper" >
+    <img [src]="projectImg" width="100%" height="100%"/>
+  </div>
+</div>

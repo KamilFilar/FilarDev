@@ -1,0 +1,56 @@
+<div class="contactForm">
+  <p class="contactForm__text">
+    {{ "home.contact.text" | translate }}
+  </p>
+  <div class="row">
+    <!-- Name -->
+    <mat-form-field appearance="fill">
+      <mat-label>{{ "home.contact.name" | translate }}</mat-label>
+      <input matInput/>
+    </mat-form-field>
+    <!-- Email -->
+    <mat-form-field appearance="fill">
+      <mat-label>{{ "home.contact.email" | translate }}</mat-label>
+      <input matInput type="email" />
+    </mat-form-field>
+    <!-- Msg type -->
+    <mat-form-field appearance="fill">
+      <mat-label>{{ "home.contact.service.label" | translate }}</mat-label>
+      <mat-select 
+        panelClass="dropDown-seasons-panel" 
+        (selectionChange)="getCasue($event.value)"
+      >
+        <mat-option class="custom_hover" value="one">
+          {{ "home.contact.service.offfer" | translate }}
+        </mat-option>
+        <mat-option class="custom_hover" value="two">
+          {{ "home.contact.service.cop" | translate }}
+        </mat-option>
+        <mat-option class="custom_hover" value="three">
+          {{ "home.contact.service.nomral" | translate }}
+        </mat-option>
+        <mat-option class="custom_hover" value="four">
+          {{ "home.contact.service.another" | translate }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <!-- Msg content -->
+    <mat-form-field appearance="fill">
+      <mat-label>{{ "home.contact.msg" | translate }}</mat-label>
+      <textarea
+        matInput
+        cdkTextareaAutosize
+        #autosize="cdkTextareaAutosize"
+        cdkAutosizeMinRows="5"
+        cdkAutosizeMaxRows="20"
+      ></textarea>
+    </mat-form-field>
+    <!-- Btn -->
+    <app-button-without-href 
+      [btnName]="'home.contact.btn' | translate" 
+      (click)="sendEamilFromUser()"
+    >
+      <fa-icon [icon]="faEnvelopeOpenText" class="fa-lg"></fa-icon>
+    </app-button-without-href>
+  </div>
+</div>

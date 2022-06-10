@@ -1,0 +1,91 @@
+.container-fluid {
+  margin: 100px 0 50px;
+  padding: 0 25px;
+}
+
+.contactText {
+  padding: 0 0 0 25px;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-size: 35px;
+    font-weight: 550;
+    line-height: 42px;
+    cursor: default;
+  }
+
+  &__email,
+  &__address,
+  &__phone {
+    padding-top: 15px;
+
+    a, span {
+      font-family: "Roboto", serif;
+      font-size: 20px;
+    }
+  }
+
+  &__email {
+    display: inline-block;
+
+    a {
+      padding-left: 8px;
+      text-decoration: none;
+      letter-spacing: 2px;
+      color: var(--default-color);
+      transition: 0.3s;
+
+      &:hover {
+        text-decoration: underline;
+        color: var(--green-light);
+      }
+    }
+  }
+
+  &__address,
+  &__phone {
+    span {
+      padding-left: 10px;
+      letter-spacing: 1px;
+      cursor: default;
+    }
+  }
+
+  &__photo {
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+  }
+}
+
+fa-icon {
+  color: var(--green-light);
+  display: inline-block;
+  vertical-align: -6px;
+}
+
+@media screen and (max-width: 992px) {
+  .contactText {
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+      font-size: 30px;
+      line-height: 34px;
+      text-align: center;
+    }
+
+    &__photo {
+      width: 80%;
+    }
+  }
+}
+
+// @media screen and (max-width: 1000px) {
+//   .contactText {
+//     &__photo {
+//       width: 60%;
+//     }
+//   }
+// }

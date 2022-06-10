@@ -1,0 +1,45 @@
+.nav-item {
+  margin: 0 10px;
+  line-height: 100%;
+  text-align: center;
+
+  .nav-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 21px;
+    letter-spacing: 1px;
+    color: var(--default-color);
+    transition: 0.2s;
+
+    &:hover {
+      margin-top: -3px;
+      color: var(--green-light-hover);
+      transition: 0.4s;
+      cursor: pointer;
+    }
+  }
+
+  .active {
+    color: var(--green-light);
+  }
+}
+
+// Full responsive navbar
+@media only screen and (max-width: 798px) and (min-width: 767px) {
+  .nav-item {
+    .nav-link {
+      font-size: 18px;
+    }
+  }
+}
+
+// Remove hover effect on small screen in nav
+@media only screen and (max-width: 767px) {
+  .nav-item {
+    margin: 8px 0;
+
+    .nav-link:hover {
+      margin-top: 0;
+    }
+  }
+}

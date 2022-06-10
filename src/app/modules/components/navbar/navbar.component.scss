@@ -1,0 +1,119 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 5px 5px -7px;
+  width: 100%;
+  min-height: 70px;
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(45deg, green, var(--green-light-hover), green);
+  border-image-slice: 1;
+  background-color: var(--nav-background);
+  font-family: "Roboto", serif;
+  font-display: swap;
+}
+
+// Toggle btn on mobile
+.navbar-toggler {
+  padding: 0;
+  max-height: 45px;
+
+  .navbar-toggler-icon {
+    color: var(--green-light);
+    transition: 0.4s;
+
+    &:hover {
+      color: var(--green-light-hover);
+      transition: 0.3s;
+    }
+  }
+
+  &:focus,
+  &:active {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+// Logo css
+.navbar-brand {
+  padding: 0 -5px 0 5px;
+  outline: none;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+
+  &--partOne,
+  &--partTwo {
+    font-size: 34px;
+    letter-spacing: 2px;
+  }
+
+  &--partOne {
+    background: -webkit-linear-gradient(
+      right,
+      var(--default-color) 70%,
+      var(--green-light-hover),
+      var(--green-light)
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &--partTwo {
+    background: -webkit-linear-gradient(
+      left,
+      var(--default-color) 15%,
+      var(--green-light-hover),
+      var(--green-light)
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0 4px 2px 0;
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(
+      45deg,
+      var(--default-color),
+      var(--green-light) 50%,
+      var(--green-light-hover)
+    );
+    border-image-slice: 1;
+  }
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+
+  &__item--link {
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+
+    img {
+      padding: none;
+      width: 33px;
+      height: auto;
+    }
+  }
+}
+
+// Settings in navbar on small screen
+@media only screen and (max-width: 767px) {
+  ul {
+    &.navbar-nav {
+      display: table;
+      width: 25%;
+      margin: 0 auto;
+
+      > li {
+        display: table-cell;
+        padding: 0 5px 5px;
+      }
+    }
+  }
+}

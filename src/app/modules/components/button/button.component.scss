@@ -1,0 +1,44 @@
+button {
+  position: relative;
+  padding: 15px;
+  margin: 5px 0 15px;
+  border: none;
+  background: -webkit-linear-gradient(
+    left,
+    var(--green-light),
+    var(--green-dark)
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 550;
+  font-family: "Roboto", serif;
+  font-size: 1.3rem;
+
+  &:after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--btn-welcome-bg-color);
+    transition: 0.3s ease;
+  }
+
+  &:hover:after {
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    box-shadow: 0 0 1rem var(--green-dark);
+  }
+
+  &:hover {
+    background: var(--green-light);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

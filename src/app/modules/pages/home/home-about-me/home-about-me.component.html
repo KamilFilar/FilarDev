@@ -1,0 +1,71 @@
+<div class="container-fluid" id="AboutMe">
+  <div class="row justify-content-center">
+    <div class="col-12">
+      <app-about-me-avatar></app-about-me-avatar>
+      <div class="row justify-content-center content">
+        <!-- Left side -->
+        <div class="col-xxl-2 col-xl-3 col-lg-3 col-md-11 col-12 aboutMe">
+          <p class="aboutMe__title text-center">
+            {{ "home.aboutMe.desc.whoIm" | translate }} 😄
+          </p>
+          <!-- Button SHORT version -->
+          <app-button-without-href
+            [btnName]="'home.aboutMe.btn.short' | translate"
+            (click)="setShort()"
+          >
+            <fa-icon
+              [icon]="faCheck"
+              class="fa-lg"
+              *ngIf="aboutMeVersion == 'short'"
+            ></fa-icon>
+          </app-button-without-href>
+          <!-- Button LONG version -->
+          <app-button-without-href
+            [btnName]="'home.aboutMe.btn.long' | translate"
+            (click)="setLong()"
+          >
+            <fa-icon
+              [icon]="faCheck"
+              class="fa-lg"
+              *ngIf="aboutMeVersion == 'long'"
+            ></fa-icon>
+          </app-button-without-href>
+          <!-- Button SKILLS version -->
+          <app-button-without-href
+            [btnName]="'home.aboutMe.btn.skills' | translate"
+            (click)="setSkills()"
+          >
+            <fa-icon
+              [icon]="faCheck"
+              class="fa-lg"
+              *ngIf="aboutMeVersion == 'skills'"
+            ></fa-icon>
+          </app-button-without-href>
+        </div>
+        <!-- Right side -->
+        <div class="col-xxl-7 col-xl-8 col-lg-9 col-md-11 col-12">
+          <p
+            class="aboutMe__short vertically-center"
+            *ngIf="aboutMeVersion == 'short'"
+          >
+            {{ "home.aboutMe.desc.short1" | translate }}
+            {{ "home.aboutMe.desc.short2" | translate }}
+            {{ "home.aboutMe.desc.short3" | translate }}
+            {{ "home.aboutMe.desc.short4" | translate }}
+            {{ "home.aboutMe.desc.short5" | translate }}
+          </p>
+          <p
+            class="aboutMe__long vertically-center"
+            *ngIf="aboutMeVersion == 'long'"
+          >
+            {{ "home.aboutMe.desc.long1" | translate }}
+            <span>{{ "home.aboutMe.desc.long2" | translate }} 😎</span>
+          </p>
+          <app-about-me-skills
+            *ngIf="aboutMeVersion == 'skills'"
+          ></app-about-me-skills>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

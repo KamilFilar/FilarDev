@@ -1,0 +1,69 @@
+<div
+  class="container-fluid"
+  id="Portfolio"
+  [ngClass]="{
+    'slideIn--left': slideOff == true,
+    displayWrapper: slideOff == false
+  }"
+>
+  <div class="row justify-content-center">
+    <div class="col-12">
+      <app-reverse-portfolio-item
+        [projectTitle]="'projects.mapApp.title' | translate"
+        [projectDescription]="'projects.mapApp.desc' | translate"
+        [projectStack]="'projects.mapApp.stack' | translate"
+        [projectImg]="projects.mapApp.projectImg"
+        [projectRepository]="projects.mapApp.projectRepository"
+        [projectLink]="projects.mapApp.projectLink"
+      ></app-reverse-portfolio-item>
+        <app-portfolio-item
+        [projectTitle]="'projects.filarDev.title' | translate"
+        [projectDescription]="'projects.filarDev.desc' | translate"
+        [projectStack]="'projects.filarDev.stack' | translate"
+        [projectImg]="projects.filarDev.projectImg"
+        [projectRepository]="projects.filarDev.projectRepository"
+        [projectLink]="projects.filarDev.projectLink"
+      ></app-portfolio-item>
+      <app-reverse-portfolio-item
+        [projectTitle]="'projects.loginApp.title' | translate"
+        [projectDescription]="'projects.loginApp.desc' | translate"
+        [projectStack]="'projects.loginApp.stack' | translate"
+        [projectImg]="projects.loginApp.projectImg"
+        [projectRepository]="projects.loginApp.projectRepository"
+        [projectLink]="projects.loginApp.projectLink"
+      ></app-reverse-portfolio-item>
+      <app-portfolio-item
+        [projectTitle]="'projects.borderapp.title' | translate"
+        [projectDescription]="'projects.borderapp.desc' | translate"
+        [projectStack]="'projects.borderapp.stack' | translate"
+        [projectImg]="projects.boredapp.projectImg"
+        [projectRepository]="projects.boredapp.projectRepository"
+        [projectLink]="projects.boredapp.projectLink"
+      ></app-portfolio-item>
+      <app-reverse-portfolio-item
+        [projectTitle]="'projects.pokedex.title' | translate"
+        [projectDescription]="'projects.pokedex.desc' | translate"
+        [projectStack]="'projects.pokedex.stack' | translate"
+        [projectImg]="projects.pokedex.projectImg"
+        [projectRepository]="projects.pokedex.projectRepository"
+        [projectLink]="projects.pokedex.projectLink"
+      ></app-reverse-portfolio-item>
+      <app-portfolio-item
+        [projectTitle]="'projects.borys.title' | translate"
+        [projectDescription]="'projects.borys.desc' | translate"
+        [projectStack]="'projects.borys.stack' | translate"
+        [projectImg]="projects.borys.projectImg"
+        [projectRepository]="projects.borys.projectRepository"
+        [projectLink]="projects.borys.projectLink"
+      ></app-portfolio-item>
+      <app-reverse-portfolio-item
+        [projectTitle]="'projects.silverGlobeINZ.title' | translate"
+        [projectDescription]="'projects.silverGlobeINZ.desc' | translate"
+        [projectStack]="'projects.silverGlobeINZ.stack' | translate"
+        [projectImg]="projects.silverGlobeINZ.projectImg"
+        [projectRepository]="projects.silverGlobeINZ.projectRepository"
+        [projectLink]="projects.silverGlobeINZ.projectLink"
+      ></app-reverse-portfolio-item>
+    </div>
+  </div>
+</div>

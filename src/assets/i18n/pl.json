@@ -1,0 +1,110 @@
+{
+  "navbar": {
+    "aboutMe": "O mnie",
+    "portfolio": "Portfolio",
+    "contact": "Kontakt",
+    "lang": {
+      "en": "Ustaw język angielski",
+      "pl": "Ustaw język polski"
+    },
+    "theme": {
+      "dark": "Ciemny motyw",
+      "light": "Jasny motyw"
+    }
+  },
+  "home": {
+    "welcome": {
+      "ITEng": "inżynierem IT",
+      "frontDev": "frontend developerem",
+      "shortAboutMe": "Nieprzerwanie od kilku lat intensywnie rozwijam swoje umiejętności z zakresu tworzenia aplikacji internetowych. Wyróżnia mnie dokładność z jaką wkonuję projekty, staranne dopracywowanie każdego szczegółu oraz poczucie misji.",
+      "aboutMe": "Dowiedz się więcej",
+      "portfolio": "Zobacz portfolio"
+    },
+    "aboutMe": {
+      "desc": {
+        "whoIm": "Kim jestem?",
+        "short1": "Cześć! Mam na imię Kamil, jestem frontend developerem. Od 2020 roku zajmuje się rozwijaniem swojej wiedzy z dziedziny programowania i projektowania aplikacji internetowych.",
+        "short2": "Tworzenie stron dla małych jak i dużych firm sprawia mi wielką przyjemność oraz daje wiele satysfakcji. ",
+        "short3": "W rozwiązywaniu problemów cechuje mnie ogromna kreatywność, otwarty, analityczny umysł, wytrwałość w dążeniu do wyznaczonego celu.",
+        "short4": "Moją misją jest to, aby pomagać innym osiągać jeszcze większe sukcesy. Chcę żeby internet stawał się coraz piękniejszym miejscem.",
+        "short5": "A coś poza moim zawodem? Interesuje się historią, psychologią, zarządzaniem oraz sportem, dietetyką i gotowaniem. W wolnym czasie lubię czytać książki ✌️",
+        "long1": "No co Ty, przecież nie będę tu autobiografii pisał.",
+        "long2": "Lepiej poznajmy się w rzeczywistości!"
+      },
+      "btn": {
+        "short": "Krótka wersja",
+        "skills": "Umiejętności",
+        "long": "Długa wersja"
+      },
+      "stack": {
+        "other": "Pozostałe"
+      }
+    },
+    "contact": {
+      "btn": "Wyślij",
+      "name": "Twoje imię",
+      "email": "Twój email",
+      "service": {
+        "label": "W czym mogę pomóc?",
+        "offfer": "Oferta pracy",
+        "cop": "Oferta współpracy",
+        "nomral": "Pomoc w projekcie",
+        "another": "Zwykła wiadomość"
+      },
+      "msg": "Wiadomość",
+      "text": "Masz jakiś pomysł lub ofertę? Interesuje Cię współpraca za mną? Skorzystaj z formularza kontaktowego już teraz.",
+      "tittle": "Skontaktuj się ze mną - stwórzmy coś wspaniałego.",
+      "location": "Przeworsk (37-200), Polska"
+    }
+  },
+  "alert": {
+    "good": "Wiadomość wysłana!",
+    "msgGood": "Dzięki za kontakt ze mną! Postaram odpowiedzieć możliwie jak najszybciej na Twoją wiadomośc. 😊",
+    "wrong": "Nie wysłano wiadomości! 😓",
+    "msgWrong": "Prawdopodobnie wkradł się błąd w projekcie i aktualnie pracuję nad jego rozwiązaniem. Długi czas wysyłania spowodowany jest hostingiem strony (heroku).",
+    "close": "Zamknij",
+    "email": "Podano zły adres email!"
+  },
+  "pnf": {
+    "text": "Ups... Wskazana podstrona nie istnieje, ale możesz zagrać w grę! 😄",
+    "return": "Powrót",
+    "refresh": "Odśwież grę"
+  },
+  "projects": {
+    "filarDev": {
+      "title": "FilarDev",
+      "desc": "FilarDev to personalna aplikacja internetowa na którą aktualnie patrzysz. Wykonana została przy wykorzystaniu frameworka Angular. Aplikacja służy do prezentacji części moich proejktów i jest moją internetową wizytówką. 😅",
+      "stack": "Angular + REST API"
+    },
+    "borys": {
+      "title": "borysnieruchomości",
+      "desc": "Jest to mój pierwszy „komercyjny” projekt wykonany dla zaprzyjaźnionej firmy. Aplikacja internetowa służy do handlu nieruchomościami. W tej aplikacji jestem odpowiedzialny za część frontendową (aplikacja posiada REST API z którym musiałem połączyć projekt).",
+      "stack": "Angular + REST API"
+    },
+    "silverGlobeINZ": {
+      "title": "SrebrnyGlob - praca inżynierska",
+      "desc": "Jest to moja praca inżynierska. Aplikacja składa się z dwóch API oraz części frontendowej. Posiada system akwizycji danych o użytkowniku, prezentuje funkcjonalności związane z Księżycem oraz zawiera elementy eksploracji danych (dzięki API napisanemu w języku R). 🤯",
+      "stack": "Angular, ExpressJS, MySQL, R (Plumber)"
+    },
+    "pokedex": {
+      "title": "Pokedex",
+      "desc": "Prosta aplikacja wykorzystująca API udostępniające informacje o wszystkich pokemonach dostępnych w uniwersum. Powstała z wykorzystaniem frameworka Vue - aplikacja prezentuje jedynie podstawowe informacje.",
+      "stack": "Vue + REST API"
+    },
+    "borderapp": {
+      "title": "BoredApp",
+      "desc": "Moja pierwsza aplikacja napisana z wykorzystaniem biblioteki React. Aplikacja pozwala znaleźć coś ciekawego do robienia gdy nam się nudzi. Została połączona z darmowym API, które zwraca propozycje rzeczy do robienia.",
+      "stack": "React + REST API"
+    },
+    "mapApp" : {
+      "title": "MapApp",
+      "desc": "Prosta aplikacja wykorzystujaca bibliotekę Leaflet przeznaczoną do obsługi map. Do stworzenia tego projektu wykorzystałem framework Angular.",
+      "stack": "Angular + WEB API"
+    },
+    "loginApp": {
+      "title": "LoginApp",
+      "desc": "Aplikacja przeznaczona do autoryzacji użytkowników z wykorzystaniem JWT. Aplikacja została zintegrowana z gotowym REST API, a część frontendowa powstała w Angularze.",
+      "stack": "Angular + REST API"
+    }
+  }
+}

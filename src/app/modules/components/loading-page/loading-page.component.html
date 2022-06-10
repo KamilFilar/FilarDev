@@ -1,0 +1,12 @@
+<div class="loader-container">
+  <section>
+    <div class="loader--circle">
+        <span *ngFor="let point of numberOfPoints; let id = index" style="--i: {{ id }};"></span>
+    </div>
+  </section>
+  <div class="loader--wave">
+    <span *ngFor="let letter of loadingArr; let id = index" style="--k: {{ id }}">
+        {{ letter }}
+    </span>
+  </div>
+</div>

@@ -1,0 +1,3 @@
+<app-navbar *ngIf="(loadService.isLoading | async) == false"></app-navbar>
+<app-loading-page *ngIf="loadService.isLoading | async"></app-loading-page>
+<router-outlet *ngIf="(loadService.isLoading | async) == false"></router-outlet>

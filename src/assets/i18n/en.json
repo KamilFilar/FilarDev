@@ -1,0 +1,110 @@
+{
+  "navbar": {
+    "aboutMe": "About me",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "lang": {
+      "en": "Set English language",
+      "pl": "Set Polish language"
+    },
+    "theme": {
+      "dark": "Dark theme",
+      "light": "Light theme"
+    }
+  },
+  "home": {
+    "welcome": {
+      "ITEng": "IT engineer",
+      "frontDev": "frontend developer",
+      "shortAboutMe": "I have been intensively developing my skills in the field of web application development for several years. I am distinguished by the accuracy with which I carry out projects, careful refinement of every detail and a sense of mission.",
+      "aboutMe": "Learn more",
+      "portfolio": "View portfolio"
+    },
+    "aboutMe": {
+      "desc": {
+        "whoIm": "Who am I?",
+        "short1": "Hello! My name is Kamil, I am a frontend developer. Since 2020 I have been developing my knowledge in the field of programming and designing web applications.",
+        "short2": "Creating websites for small and large companies gives me great pleasure and gives a lot of satisfaction.",
+        "short3": "I am very creative in solving problems, have an open, analytical mind, and persistence in pursuing a set goal.",
+        "short4": "My mission is to help others achieve even greater success. I want the internet to become a more and more beautiful place.",
+        "short5": "What's beyond my profession? I'm interested in history, psychology, management as well as sports, dietetics and cooking. In my spare time I like reading books ✌️",
+        "long1": "What are you, I won't be writing an autobiography here.",
+        "long2": "Let's get to know each other better!"
+      },
+      "btn": {
+        "short": "Short version",
+        "skills": "Skills",
+        "long": "long version"
+      },
+      "stack": {
+        "other": "Other"
+      }
+    },
+    "contact": {
+      "btn": "Send",
+      "name": "Your name",
+      "email": "Your email",
+      "service": {
+        "label": "How can I help you?",
+        "offfer": "Job offer",
+        "cop": "Cooperation offer",
+        "nomral": "Help in the project",
+        "another": "Normal message"
+      },
+      "msg": "Message",
+      "text": "Do you have any idea or offer? Are you interested in working with me? Use the contact form now.",
+      "tittle": "Contact me - let's create something wonderful.",
+      "location": "Przeworsk (37-200), Poland"
+    }
+  },
+  "alert": {
+    "good": "Message sent!",
+    "msgGood": "Thanks for contacting me! I will try to answer your message as soon as possible. 😊",
+    "wrong": "Message not sent! 😓",
+    "msgWrong": "There is probably a bug in the project and I'm currently working on a fix for it. Long upload time is due to web hosting (heroku).",
+    "close": "Close",
+    "email": "Wrong e-mail address entered!"
+  },
+  "pnf": {
+    "text": "Whoops ... The subpage does not exist, but you can play the game! 😄",
+    "return": "Return",
+    "refresh": "Refresh the game"
+  },
+  "projects": {
+    "filarDev": {
+      "title": "FilarDev",
+      "desc": "FilarDev is a personal web application that you are currently looking at. It was made using the Angular. The application is used to present some of my projects and is my online showcase. 😅",
+      "stack": "Angular + REST API"
+    },
+    "borys": {
+      "title": "borysnieruchomości",
+      "desc": "This is my first „commercial” project made for a friendly company. The web application is used for real estate trading. In this application I am responsible for the frontend part (the application has a REST API with which I had to connect the project).",
+      "stack": "Angular + REST API"
+    },
+    "silverGlobeINZ": {
+      "title": "SilverGlob - engineering work",
+      "desc": "This is my engineering thesis. The application consists of two APIs and a front-end part. It has a user data acquisition system, presents functionalities related to the Moon and includes data mining elements (thanks to the API written in R language). 🤯",
+      "stack": "Angular, ExpressJS, MySQL, R (Plumber)"
+    },
+    "pokedex": {
+      "title": "Pokedex",
+      "desc": "A simple application that uses the API that provides information about all pokemon available in the universe. It was created using the Vue framework - the application presents only basic information.",
+      "stack": "Vue + REST API"
+    },
+    "borderapp": {
+      "title": "BoredApp",
+      "desc": "My first application written using the React library. The application allows us to find something interesting to do when we are bored. It was combined with a free API that returns suggestions for things to do.",
+      "stack": "React + REST API"
+    },
+    "mapApp": {
+      "title": "MapApp",
+      "desc": "A simple application that uses the Leaflet map library. I used the Angular framework to create this project.",
+      "stack": "Angular + WEB API"
+    },
+    "loginApp": {
+      "title": "LoginApp",
+      "desc": "The application is designed to authorize users with the use of JWT. The application has been integrated with a REST API, and the front-end part was created in Angular.",
+      "stack": "Angular + REST API"
+    }
+  }
+}

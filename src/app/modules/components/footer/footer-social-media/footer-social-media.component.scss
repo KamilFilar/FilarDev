@@ -1,0 +1,28 @@
+.socialMedia {
+  display: inline-block;
+  vertical-align: 5px;
+  text-decoration: none;
+  color: var(--default-color);
+  transition: 0.3s;
+
+  &__icon {
+    display: inline-block;
+    vertical-align: -7px;
+    color: var(--green-light);
+    transition: 0.4s;
+  }
+
+  &__text {
+    padding-left: 5px;
+    text-transform: uppercase;
+    font-family: "Roboto", serif;
+    font-size: 21px;
+    letter-spacing: 2px;
+    transition: 0.2s;
+  }
+
+  &:hover .socialMedia__icon,
+  &:hover .socialMedia__text {
+    color: var(--green-light-hover);
+  }
+}

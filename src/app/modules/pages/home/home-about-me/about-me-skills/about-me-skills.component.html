@@ -1,0 +1,35 @@
+<div class="wrapper">
+  <div class="skillBox behindBox behindBox--left">
+    <fa-icon [icon]="faScrewdriverWrench" class="fa-2x icon"></fa-icon>
+    <p class="skillBox__title">
+      Backend
+    </p>
+    <ul class="skillBox__content">
+      <li *ngFor="let skill of backEndArr">
+        {{ skill }}
+      </li>
+    </ul>
+  </div>
+  <div class="skillBox frontBox">
+    <fa-icon [icon]="faLaptopCode" class="fa-2x icon"></fa-icon>
+    <p class="skillBox__title">
+      Frontend
+    </p>
+    <ul class="skillBox__content">
+      <li *ngFor="let skill of frontEndArr">
+        {{ skill }}
+      </li>
+    </ul>
+  </div>
+  <div class="skillBox behindBox behindBox--right">
+    <fa-icon [icon]="faSketch" class="fa-2x icon"></fa-icon>
+    <p class="skillBox__title">
+      {{ "home.aboutMe.stack.other" | translate }}
+    </p>
+    <ul class="skillBox__content">
+      <li *ngFor="let skill of otherArr">
+        {{ skill }}
+      </li>
+    </ul>
+  </div>
+</div>

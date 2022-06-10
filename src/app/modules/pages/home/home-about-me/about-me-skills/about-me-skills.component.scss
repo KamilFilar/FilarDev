@@ -1,0 +1,137 @@
+.wrapper {
+  margin-top: 25px;
+  padding: 5px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeinIcon 0.5s linear;
+
+  .frontBox {
+    z-index: 1;
+    width: 100%;
+    min-width: 280px;
+    height: auto;
+    background-color: rgb(18, 18, 18);
+  }
+
+  .behindBox {
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(21, 21, 21);
+
+    &--right {
+      margin-left: -1px;
+    }
+
+    &--left {
+      margin-right: -1px;
+    }
+  }
+
+  .skillBox {
+    padding: 5px 7px;
+    display: inherit;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid transparent;
+    border-image: linear-gradient(
+      90deg,
+      green,
+      var(--green-light-hover),
+      green
+    );
+    border-image-slice: 1;
+
+    .icon {
+      margin: 10px 0;
+      color: var(--green-light);
+      animation: fadeinIcon 0.8s linear;
+    }
+
+    &__title {
+      margin: 5px 0;
+      padding-bottom: 3px;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: "Roboto", serif;
+      font-size: 24px;
+      letter-spacing: 2px;
+      border-bottom: 1px solid transparent;
+      border-image: linear-gradient(
+        45deg,
+        green,
+        var(--green-light-hover),
+        green
+      );
+      border-image-slice: 1;
+      cursor: default;
+      animation: fadeinIcon 0.8s linear;
+    }
+
+    &__content {
+      width: 100%;
+      font-family: "Roboto", serif;
+      font-size: 19px;
+      line-height: 23px;
+      letter-spacing: 1px;
+      animation: fadeinIcon 1.2s linear;
+    }
+  }
+}
+
+ul {
+  font-family: "Roboto", serif;
+  font-size: 18px;
+  list-style: none;
+
+  li {
+    margin: 8px 0;
+    color: var(--default-color-dark);
+    cursor: default;
+  }
+
+  li::before {
+    content: "\2022";
+    color: var(--green-light);
+    font-weight: bold;
+    display: inline-block;
+    width: 8px;
+    margin-left: -25px;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 692px) {
+  .wrapper {
+    margin-top: 0;
+    flex-wrap: wrap-reverse;
+    align-items: flex-start;
+    gap: 5px;
+
+    .frontBox {
+      max-width: 280px;
+      order: 1;
+    }
+  
+    .behindBox {
+      max-width: 280px;
+  
+      &--right {
+        margin-left: 0px;
+      }
+  
+      &--left {
+        margin-right: 0px;
+      }
+    }
+  }
+}

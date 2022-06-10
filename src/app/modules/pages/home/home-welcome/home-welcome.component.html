@@ -1,0 +1,30 @@
+r<div class="containter-fluid">
+  <div class="row">
+    <div class="col-12" class="title">
+      <p class="title__text">frontend developer</p>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-xxl-4 col-xl-5 col-lg-6 col-md-10 col-sm-11 col-12 aboutWrapper">
+      <p class="aboutWrapper__name">Kamil Filar</p>
+      <p class="aboutWrapper__aboutMe">
+        {{ "home.welcome.shortAboutMe" | translate }}
+      </p>
+      <div class="aboutWrapper__buttons">
+        <app-button-without-href
+          [btnName]="'home.welcome.aboutMe' | translate"
+          (click)="scrollToSection(btn.aboutMe)"
+        >
+        </app-button-without-href>
+        <app-button-without-href
+          [btnName]="'home.welcome.portfolio' | translate"
+          (click)="scrollToSection(btn.portfolio)"
+        >
+        </app-button-without-href>
+      </div>
+    </div>
+    <div class="col-xxl-8 col-xl-7 col-lg-6 col-md-10 col-sm-11 col-12 imgWrapper">
+      <app-home-welcome-gallery></app-home-welcome-gallery>
+    </div>
+  </div>
+</div>

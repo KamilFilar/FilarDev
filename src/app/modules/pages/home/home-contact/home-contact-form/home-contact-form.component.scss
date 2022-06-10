@@ -1,0 +1,31 @@
+.contactForm {
+  padding: 15px;
+
+  &__text {
+    font-size: 20px;
+    line-height: 26px;
+    text-indent: 12px;
+    color: var(--default-color-dark);
+    cursor: default;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    text-align: center;
+
+    app-button-without-href {
+      margin-top: -15px;
+      transition: .2s;
+    }
+  }
+}
+
+fa-icon {
+  color: var(--green-light);
+  margin-left: -2px;
+  margin-right: 2px;
+}

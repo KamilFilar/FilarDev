@@ -1,0 +1,9 @@
+<li class="nav-item">
+  <a
+    class="nav-link"
+    (click)="scrollToSection(href)"
+    [ngClass]="{ active: isActive(currentSection) }"
+  >
+    {{ text }}
+  </a>
+</li>

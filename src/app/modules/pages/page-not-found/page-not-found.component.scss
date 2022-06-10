@@ -1,0 +1,45 @@
+.container-fluid {
+  padding: 0 15px;
+  min-height: 90vh;
+}
+
+.pnf__game {
+  margin-bottom: 70px !important;
+}
+
+.pnf__text {
+  margin: 100px 0 50px;
+  font-family: "Roboto", serif;
+  font-display: swap;
+
+  &--code {
+    padding-top: 50px;
+    background: -webkit-linear-gradient(
+      left,
+      var(--green-light),
+      var(--green-dark),
+      green
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 150px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    line-height: 150px;
+  }
+
+  &--description {
+    padding: 0 15px;
+    font-size: 21px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    transition: 0.3s;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .pnf__text--description {
+    text-indent: 15px;
+    text-align: left !important;
+  }
+}

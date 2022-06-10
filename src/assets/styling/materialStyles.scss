@@ -1,0 +1,141 @@
+// MAT TOOLTIP
+.mat-tooltip {
+  z-index: 2 !important;
+  background: rgba(0, 120, 0, 0.9);
+  font-size: 0.9rem;
+  padding: 3px;
+}
+
+// MAT TOGGLE-SWITCH
+.mat-slide-toggle-thumb {
+  width: 21px !important;
+  height: 21px !important;
+  transform: translate(0%, 0%);
+  background-image: url(./../images/moon.svg) !important;
+  background-origin: content-box;
+  background-size: contain;
+  background-position: center center;
+}
+
+.mat-accent .mat-slide-toggle-thumb {
+  filter: grayscale(100%);
+}
+
+.mat-checked .mat-slide-toggle-thumb {
+  filter: grayscale(0);
+}
+
+.mat-slide-toggle-bar {
+  background-color: #bebebe;
+  border-radius: 15px !important;
+  height: 16px !important;
+}
+
+.mat-slide-toggle-thumb-container {
+  top: -2px !important;
+}
+
+.mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
+  background: linear-gradient(
+    to right,
+    green,
+    var(--green-light),
+    var(--green-light-hover)
+  );
+}
+
+// MAT INPUT
+.mat-form-field-appearance-fill:not(mat-form-field-disabled)
+  .mat-form-field-flex {
+  background-color: var(--input-bg-color) !important;
+}
+
+.mat-form-field {
+  width: 100%;
+  height: auto;
+  margin: 10px 0;
+  padding: 0;
+  transition: 0.2s;
+  color: var(--font-color-contact);
+
+  .mat-form-field-label {
+    color: var(--green-light);
+    font-family: "Roboto", serif;
+    font-display: swap;
+    font-size: 1.3rem;
+  }
+
+  .mat-form-field-ripple {
+    background-color: var(--green-light);
+  }
+
+  .mat-input-element {
+    margin: 7px 0 5px 7px;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .mat-form-field {
+    width: 80%;
+  }
+}
+
+.mat-form-field.mat-focused {
+  .mat-form-field-label {
+    color: var(--green-light-hover);
+  }
+  .mat-form-field-ripple {
+    background-color: var(--green-light-hover);
+  }
+  .mat-input-element {
+    color: var(--default-color);
+    margin: 7px 0 5px 7px;
+  }
+}
+
+.mat-form-field .mat-form-field-flex {
+  background-color: var(--background-color3) !important;
+}
+
+//  MAT SELECT
+.mat-select {
+  margin: 7px 0 5px 7px;
+}
+
+.mat-select-value {
+  color: var(--font-color-contact);
+}
+
+.mat-select-arrow {
+  color: var(--green-light);
+}
+
+.mat-form-field.mat-focused.mat-primary .mat-select-arrow {
+  color: var(--green-light);
+}
+
+.mat-primary .mat-option.mat-selected:not(.mat-option-disabled) {
+  color: var(--green-light-hover) !important;
+}
+
+.mat-form-field-type-mat-select:not(.mat-form-field-disabled)
+  .mat-form-field-flex {
+  background-color: var(--input-bg-color) !important;
+}
+
+.mat-select-panel .mat-option {
+  background-color: var(--mat-option-bg) !important;
+  color: var(--green-dark) !important;
+}
+
+.mat-select-panel .mat-option:hover:not(.mat-option-disabled) {
+  background-color: var(--mat-option-bg-hover) !important;
+  color: var(--green-light) !important;
+}
+
+.dropDown-seasons-panel {
+  border-radius: 10px !important;
+  border: 1px solid var(--green-dark) !important;
+  position: absolute !important;
+  top: 48px !important;
+}
